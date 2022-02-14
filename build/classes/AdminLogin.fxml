@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="655.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="AdminLoginController">
+   <children>
+      <HBox layoutX="86.0" layoutY="113.0" prefHeight="379.0" prefWidth="462.0">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="502.0" prefWidth="252.0" style="-fx-background-color: green;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="41.0" prefWidth="186.0" text="Admin Login" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="50.0" left="20.0" right="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label text="Email">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="adminemail" prefHeight="47.0" prefWidth="232.0" promptText="Email">
+                     <VBox.margin>
+                        <Insets left="20.0" right="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+                  <Label text="Password">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <PasswordField fx:id="adminpassword" prefHeight="42.0" prefWidth="212.0" promptText="Password">
+                     <VBox.margin>
+                        <Insets left="20.0" right="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </PasswordField>
+                  <Button fx:id="adminloginbutton" mnemonicParsing="false" onAction="#LoginAdmin" prefHeight="44.0" prefWidth="111.0" text="Login">
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="50.0" top="20.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="465.0" prefWidth="259.0" style="-fx-background-color: yellow;">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="50.0" top="20.0" />
+               </HBox.margin>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="52.0" prefWidth="199.0" text="Student Login" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                     <textFill>
+                        <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.06130268199233716">
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label text="Email">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="studentemail" prefHeight="47.0" prefWidth="232.0" promptText="Email">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Password">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <PasswordField fx:id="studentpassword" prefHeight="44.0" prefWidth="319.0" promptText="Password">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <Button fx:id="studentloginbutton" alignment="CENTER" mnemonicParsing="false" onAction="#LoginStudent" prefHeight="43.0" prefWidth="101.0" text="Login">
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label contentDisplay="CENTER" layoutX="153.0" layoutY="65.0" prefHeight="54.0" prefWidth="401.0" text="QUIZZ APPLICATION" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="37.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
